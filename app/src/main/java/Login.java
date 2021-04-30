@@ -11,7 +11,10 @@ import android.widget.Toast;
 import com.example.evaristo.R;
 
 import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
@@ -51,21 +54,34 @@ public class Login extends Activity {
                 }
                 }
                 try {
-                    URL paginaURL = new URL("http://wwww....");
+                    URL paginaURL = new URL("http://www....");
                     HttpURLConnection client = (HttpURLConnection) paginaURL.openConnection();
 
                     InputStream risposta = new BufferedInputStream(client.getInputStream());
 
-                    String datiPost = URLEncoder.encode("", " ") + URLEncoder.encode();
+                    //String datiPost = URLEncoder.encode("", " ") + URLEncoder.encode();
 
                 } catch (Exception e){
                     e.printStackTrace();
                 }
+
+                StringdatiLetti = mostroDati (risposta);
+                Toast.makeText(getApplicationContext(),username, password, Toast.LENGTH_LONG).show();
             }
         });
     }
 
-
+private static  String mostroDati (inputStream in){
+      StringBuilder sb = new StringBuilder();
+      try (BufferedReader reader = new BufferedReader(new InputStreamReader(in));){
+          String nextLine = "";
+          while ((nextLine = reader.readLine())!= null){
+              sb.append(nextLine);
+          }
+    } catch (IOException e){
+          e.printStackTrace();
+      } return sb.toString();
+}
 }
 
 
