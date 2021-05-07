@@ -11,7 +11,7 @@ public class Menu extends AppCompactActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
 
-        super.onCreate(savedInstanceState);
+        super.onCreate (savedInstanceState);
         setContentView(R.layout.activity_list);
 
         String[] nameproducts = new String[]{"primo", "secondo", "contorno"};
@@ -25,6 +25,11 @@ public class Menu extends AppCompactActivity {
                 (this, android.R.layout.simple_list_item_1,listp);
 
         mylist.setAdapter(adapter);
+    }
+
+    
+
+    private void setContentView(int activity_list) {
     }
 
 
