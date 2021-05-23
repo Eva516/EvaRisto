@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="listView" type="id" />
+    <item name="inbox" type="id" />
+    <item name="Cliente" type="id">100</item>
+</resources>

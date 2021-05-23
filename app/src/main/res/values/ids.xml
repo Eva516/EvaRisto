@@ -3,4 +3,5 @@
     <item name="editText1" type="id">100</item>
     <item name="editText2" type="id">100</item>
     <item name="textView3" type="id">100</item>
+    <item name="button" type="id" />
 </resources>

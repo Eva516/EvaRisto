@@ -1,3 +1,4 @@
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -39,6 +40,7 @@ public class Login extends Activity {
         tx1.setVisibility(View.GONE);
 
         b.setOnClickListener(new View.OnClickListener(){
+            @SuppressLint("SetTextI18n")
             @Override
                     public void onClick(View v){
                 if (username.getText().toString().equals("admin")&& password.getText().toString().equals("admin")){
@@ -47,6 +49,7 @@ public class Login extends Activity {
                     Toast.makeText(getApplicationContext(),
                             "Wrong Credentials", Toast.LENGTH_SHORT).show();
                 tx1.setVisibility(View.VISIBLE);
+                tx1.setBackgroundColor(Color.RED);
                 tx1.setText(Integer.toString(counter));
 
                 if (counter == 0){
@@ -65,24 +68,24 @@ public class Login extends Activity {
                     e.printStackTrace();
                 }
 
-                StringdatiLetti = mostroDati (risposta);
-                Toast.makeText(getApplicationContext(),username, password, Toast.LENGTH_LONG).show();
+                //StringdatiLetti = mostroDati (risposta);
+                //Toast.makeText(getApplicationContext(),username, password, Toast.LENGTH_LONG).show();
             }
         });
     }
 
-private static  String mostroDati (inputStream in){
+/*private static  String mostroDati (){
       StringBuilder sb = new StringBuilder();
-      try (BufferedReader reader = new BufferedReader(new InputStreamReader(in));){
+      try (BufferedReader reader = new BufferedReader(new InputStreamReader(mostroDati()));){
           String nextLine = "";
           while ((nextLine = reader.readLine())!= null){
               sb.append(nextLine);
           }
     } catch (IOException e){
           e.printStackTrace();
-      } return sb.toString();
+      } return sb.toString(); */
 }
-}
+//}
 
 
 

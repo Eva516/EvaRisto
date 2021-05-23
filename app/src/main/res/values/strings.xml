@@ -107,4 +107,14 @@
     <string name="hello_world">Hello Square World!</string>
     <string name="colorepage1">100</string>
     <string name="HeaderList">100</string>
+    <string name="Login">35dp</string>
+    <string name="tutorials_point">Tutorials point</string>
+    <string name="password">Password</string>
+    <string name="cancel">Cancel</string>
+    <string name="login">login</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="eva_risto">35dp</string>
+    <string name="username">Username</string>
+    <string name="attempts_left">Attempts Left:</string>
+    <string name="cancel">Cancel</string>
 </resources>

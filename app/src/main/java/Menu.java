@@ -27,7 +27,11 @@ public class Menu extends AppCompactActivity {
         mylist.setAdapter(adapter);
     }
 
-    
+    @Override
+    protected void setAdapter(ArrayAdapter<String> adapter) {
+
+    }
+
 
     private void setContentView(int activity_list) {
     }
