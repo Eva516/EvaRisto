@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
 
     ListView listView;
 
-
     @Override
     protected void onCreate (Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -32,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         arrayList.add("cliente");
         arrayList.add("ordine");
 
-        ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, arrayList);
+        ArrayAdapter<ListView> arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, arrayList);
 
         listView.setAdapter(arrayAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -42,11 +41,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
-    }
-
-    private void findViewById() {
     }
 
 }
