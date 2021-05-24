@@ -13,6 +13,13 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+    Object cliente;
+    Object ordine;
+    Object piatto;
+    Object ristorante;
+    Object tavolo;
+
+
     ListView listView;
 
     @Override
@@ -33,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        ArrayAdapter arrayAdapter<> = new ArrayAdapter(this, android.R.layout.simple_list_item_1, arrayList);
+        ArrayAdapter arrayAdapter<ristorante> = new ArrayAdapter(this, android.R.layout.simple_list_item_1, arrayList);
 
         listView.setAdapter(arrayAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
