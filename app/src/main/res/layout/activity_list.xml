@@ -13,13 +13,12 @@
     android:layout_marginTop="16dp"
     android:text="@string/HeaderList"  />
 
-<ListView
-android:id="@+id/listView1"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:layout_below="@+id/textList"
-android:layout_centerHorizontal="true"
-android:layout_marginTop="15dp" />
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textList"
+        android:layout_marginTop="-33dp" />
 </RelativeLayout>
 
 
