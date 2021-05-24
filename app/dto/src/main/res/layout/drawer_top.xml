@@ -10,7 +10,8 @@
     android:layout_height="10dp"
     android:id="@+id/imageView"
     android:layout_gravity="center_horizontal"
-    android:src="@drawable/logo"/>
+    android:src="@drawable/logo"
+    android:contentDescription="@string/immagine" />
 
     <TextView
         android:layout_width="wrap_content"

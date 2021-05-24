@@ -13,12 +13,16 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
- ListView listView;
-    protected void onCreate(Bundle savedInstanceState, int i) {
+    ListView listView;
+
+
+    @Override
+    protected void onCreate (Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        listView(ListView)findViewById(R.id.listView);
+    listView(ListView)findViewById(R.id.listview);
+
 
         ArrayList<String> arrayList = new ArrayList<>();
 
@@ -33,13 +37,16 @@ public class MainActivity extends AppCompatActivity {
         listView.setAdapter(arrayAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(MainActivity.this, "clicked item: "+i+" " +arrayList.get(i).toString(), Toast.LENGTH_SHORT).show();
+            public void onItemClick(AdapterView<?> parent, View view, int i, long l) {
+                Toast.makeText(MainActivity.this, "clicked item: "+i+" "+arrayList.get(i).toString(),Toast.LENGTH_SHORT).show();
             }
         });
 
 
 
     }
-    
+
+    private void findViewById() {
+    }
+
 }
