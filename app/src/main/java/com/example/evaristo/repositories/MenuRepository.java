@@ -1,6 +1,7 @@
 package com.example.evaristo.repositories;
 
-import com.example.evaristo.models.Menu;
+import android.view.Menu;
+
 import com.google.gson.Gson;
 
 import org.json.JSONException;
@@ -13,7 +14,6 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
-import okhttp3.internal.http.HttpHeaders;
 
 public class MenuRepository {
 

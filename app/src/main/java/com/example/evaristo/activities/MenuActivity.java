@@ -1,28 +1,24 @@
 package com.example.evaristo.activities;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import com.example.evaristo.R;
-import com.example.evaristo.adapters.MenuAdapter;
-import com.example.evaristo.models.Menu;
 import com.example.evaristo.repositories.MenuRepository;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
-import com.google.gson.Gson;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.view.menu.MenuAdapter;
 import androidx.appcompat.widget.Toolbar;
 
 import android.os.StrictMode;
+import android.view.Menu;
 import android.view.View;
 import android.widget.ListView;
 
 import java.io.IOException;
 import java.util.ArrayList;
-
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.Response;
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -54,15 +50,19 @@ public class MenuActivity extends AppCompatActivity {
         ListView listView = findViewById(R.id.menu_list);
         listView.setNestedScrollingEnabled(true);
 
+        /*
+        @SuppressLint("RestrictedApi")
         MenuAdapter menuAdapter = new MenuAdapter(this, new ArrayList<Menu>());
         listView.setAdapter(menuAdapter);
 
         try {
             Menu[] menus = menuRepository.loadMenu();
-            menuAdapter.addAll(menus);
+            //menuAdapter.addAll(menus);
             menuAdapter.notifyDataSetInvalidated();
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+         */
     }
 }
