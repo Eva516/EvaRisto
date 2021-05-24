@@ -15,7 +15,9 @@ public class Ristorante extends Activity {
     private String ragione_sociale;
     private String partita_iva;
 
+public Ristorante(){
 
+}
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
