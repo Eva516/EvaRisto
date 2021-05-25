@@ -1,7 +1,7 @@
 package com.example.evaristo.dto;
 
 public class ClienteDto {
-    private int mId;
+    private String mId;
     private String mNome;
     private String mCognome;
     private String mSesso;
@@ -9,11 +9,11 @@ public class ClienteDto {
     private String pIva;
     private String mRagioneSociale;
 
-    public int getmId() {
+    public String getmId() {
         return mId;
     }
 
-    public void setmId(int mId) {
+    public void setmId(String mId) {
         this.mId = mId;
     }
 
