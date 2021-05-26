@@ -14,7 +14,7 @@ public class PiattoAdapter extends ArrayAdapter<Piatto> {
 
     private final Context context;
 
-    public MenuAdapter(Context context, List<Piatto> values) {
+    public PiattoAdapter(Context context, List<Piatto> values) {
         super(context, R.layout.content_piatto, values);
         this.context = context;
     }

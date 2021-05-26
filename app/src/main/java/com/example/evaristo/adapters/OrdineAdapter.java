@@ -14,8 +14,8 @@ public class OrdineAdapter extends ArrayAdapter<Ordine> {
 
     private final Context context;
 
-    public MenuAdapter(Context context, List<Menu> values) {
-        super(context, R.layout.content_menu, values);
+    public OrdineAdapter(Context context, List<Menu> values) {
+        super(context, R.layout.content_ordine, values);
         this.context = context;
 
     }

@@ -13,7 +13,7 @@ import java.util.List;
 public class TavoloAdapter extends ArrayAdapter<Tavolo> {
     private final Context context;
 
-    public MenuAdapter(Context context, List<Menu> values) {
+    public TavoloAdapter(Context context, List<Menu> values) {
         super(context, R.layout.content_tavolo, values);
         this.context = context;
     }

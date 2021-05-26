@@ -14,7 +14,7 @@ public class RistoranteAdapter extends ArrayAdapter<Ristorante> {
 
     private final Context context;
 
-    public MenuAdapter(Context context, List<Menu> values) {
+    public RistoranteAdapter(Context context, List<Menu> values) {
         super(context, R.layout.content_ristorante, values);
         this.context = context;
     }
