@@ -41,11 +41,11 @@ public class ClienteRepository {
         return jsonObject.getString("token");
     }
 
-    public Cliente[] loadCliente() throws IOException {
+    public Menu[] loadCliente() throws IOException {
         Response response = this.mClient.newCall(this.buildRequest("/api/v1/cliente")).execute();
         String json = response.body().string();
         Gson gson = new Gson();
-        return gson.fromJson(json, Cliente[].class);
+        return gson.fromJson(json, Menu[].class);
     }
 
     private Request buildRequest(String path) {
