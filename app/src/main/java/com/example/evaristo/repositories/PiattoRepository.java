@@ -15,7 +15,7 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
-public class OrdineRepository {
+public class PiattoRepository {
     public static String TOKEN = "";
 
     private final OkHttpClient mClient;
@@ -23,7 +23,7 @@ public class OrdineRepository {
     public static final MediaType JSON
             = MediaType.parse("application/json; charset=utf-8");
 
-    public OrdineRepository() {
+    public PiattoRepository() {
         mClient = new OkHttpClient();
     }
 
@@ -40,8 +40,8 @@ public class OrdineRepository {
         return jsonObject.getString("token");
     }
 
-    public Menu[] loadOrdine() throws IOException {
-        Response response = this.mClient.newCall(this.buildRequest("/api/v1/menu")).execute();
+    public Menu[] loadPiatto() throws IOException {
+        Response response = this.mClient.newCall(this.buildRequest("/api/v1/piatto")).execute();
         String json = response.body().string();
         Gson gson = new Gson();
         return gson.fromJson(json, Menu[].class);
