@@ -7,6 +7,23 @@
     android:fitsSystemWindows="true"
     tools:context=".activities.MenuActivity">
 
+<TextView
+    android:id="@+id/textList"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop = "true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="16dp"
+    android:text="@string/HeaderList" />
+
+    <ListView
+    android:id="@+id/listView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textList"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="15dp" />
+
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
@@ -41,6 +58,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/fab_margin"
+        android:contentDescription="@string/Ristorante"
         app:layout_anchor="@id/app_bar"
         app:layout_anchorGravity="bottom|end"
         app:srcCompat="@android:drawable/ic_dialog_email" />
