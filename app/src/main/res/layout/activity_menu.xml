@@ -8,7 +8,8 @@
     tools:context=".activities.MenuActivity">
 
 
-    <group android:checkableBehavior="single">
+    <group android:checkableBehavior="single"
+        android:layout_width="wrap_content">
         <item
             android:id="@+id/cliente"
             android:checked="false"
@@ -17,21 +18,25 @@
         <item
             android:id="@+id/ordine"
             android:checked="false"
-            android:title="@string/ordine" />
+            android:title="@string/ordine"
+            android:icon="@drawable/ordine"/>
 
         <item
             android:id="@+id/piatto"
             android:checked="false"
-            android:title="@string/piatto" />
+            android:title="@string/piatto"
+            android:icon="@drawable/piatto"/>
 
         <item
             android:id="@+id/ristorante"
             android:checked="false"
-            android:title="@string/Ristorante" />
+            android:title="@string/Ristorante"
+            android:icon="@drawable/ristorante"/>
         <item
             android:id="@+id/tavolo"
             android:checked="false"
-            android:title="@string/tavolo" />
+            android:title="@string/tavolo"
+            android:icon="@drawable/tavolo"/>
 
     </group>
 

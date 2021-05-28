@@ -14,6 +14,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.os.StrictMode;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.ListView;
 
@@ -49,6 +50,7 @@ public class MenuActivity extends AppCompatActivity {
 
         ListView listView = findViewById(R.id.menu_list);
         listView.setNestedScrollingEnabled(true);
+
 
         /*
         @SuppressLint("RestrictedApi")
