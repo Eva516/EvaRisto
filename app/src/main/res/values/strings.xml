@@ -117,4 +117,8 @@
     <string name="username">Username</string>
     <string name="attempts_left">Attempts Left:</string>
     <string name="Ristorante">100dp</string>
+    <string name="tavolo">Tavolo</string>
+    <string name="ordine">Ordine</string>
+    <string name="piatto">Piatto</string>
+    <string name="cliente">Cliente</string>
 </resources>
