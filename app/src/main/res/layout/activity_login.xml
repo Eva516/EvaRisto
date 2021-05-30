@@ -54,6 +54,16 @@
         android:layout_centerHorizontal="true"
         android:contentDescription="@string/eva_risto" />
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="376dp"
+        android:layout_height="709dp"
+        android:layout_below="@+id/textview"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="-35dp"
+        android:contentDescription="@string/eva_risto"
+        android:src="@mipmap/logo" />
 
     <EditText
         android:layout_width="wrap_content"
