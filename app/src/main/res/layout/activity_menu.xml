@@ -8,7 +8,8 @@
     tools:context=".activities.MenuActivity">
 
 
-    <group android:checkableBehavior="single"
+    <androidx.constraintlayout.widget.Group
+        android:checkableBehavior="single"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
         <item
@@ -49,7 +50,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-    </group>
+    </androidx.constraintlayout.widget.Group>
 
 <TextView
     android:id="@+id/textList"
