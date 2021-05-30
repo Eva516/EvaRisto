@@ -2,16 +2,19 @@ package com.example.evaristo.adapters;
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+
 import com.example.evaristo.R;
+import com.example.evaristo.models.Menu;
 
 import java.util.List;
 
-public class ClienteAdapter extends ArrayAdapter<Cliente> {
+public class ClienteAdapter extends ArrayAdapter<Menu> {
 
 private final Context context;
 
-public ClienteAdapter(Context context,List<Cliente> values){
-        super(context,R.layout.content_cliente,values);
+public ClienteAdapter(Context context,List<Menu> values){
+        super(context,R.layout.content_menu,values);
 
         this.context=context;
 

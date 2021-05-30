@@ -4,18 +4,19 @@ import android.content.Context;
 import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 
 import com.example.evaristo.R;
 
 import java.util.List;
 
-public class OrdineAdapter extends ArrayAdapter<Ordine> {
+public class OrdineAdapter extends ArrayAdapter<Menu> {
 
 
     private final Context context;
 
     public OrdineAdapter(Context context, List<Menu> values) {
-        super(context, R.layout.content_ordine, values);
+        super(context, R.layout.content_menu, values);
         this.context = context;
 
     }

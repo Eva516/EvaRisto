@@ -10,11 +10,11 @@ import com.example.evaristo.R;
 
 import java.util.List;
 
-public class TavoloAdapter extends ArrayAdapter<Tavolo> {
+public class TavoloAdapter extends ArrayAdapter<Menu> {
     private final Context context;
 
     public TavoloAdapter(Context context, List<Menu> values) {
-        super(context, R.layout.content_tavolo, values);
+        super(context, R.layout.content_menu, values);
         this.context = context;
     }
     @Override

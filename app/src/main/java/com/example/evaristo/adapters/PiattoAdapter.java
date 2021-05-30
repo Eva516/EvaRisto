@@ -10,12 +10,12 @@ import com.example.evaristo.R;
 
 import java.util.List;
 
-public class PiattoAdapter extends ArrayAdapter<Piatto> {
+public class PiattoAdapter extends ArrayAdapter<Menu> {
 
     private final Context context;
 
-    public PiattoAdapter(Context context, List<Piatto> values) {
-        super(context, R.layout.content_piatto, values);
+    public PiattoAdapter(Context context, List<Menu> values) {
+        super(context, R.layout.content_menu, values);
         this.context = context;
     }
 
