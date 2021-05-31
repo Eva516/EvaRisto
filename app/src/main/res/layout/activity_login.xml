@@ -32,15 +32,14 @@
         android:id="@+id/username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:focusable="true"
-        android:textColorHighlight="#ff7eff15"
-        android:textColorHint="#ffff25e6"
-        android:layout_marginTop="46dp"
         android:layout_below="@+id/imageView"
-        android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
+        android:layout_marginTop="46dp"
         android:autofillHints="Username"
-        android:inputType="text" />
+        android:focusable="true"
+        android:inputType="text"
+        android:textColorHighlight="#ff7eff15"
+        android:textColorHint="#ffff25e6" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -54,11 +53,11 @@
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="376dp"
-        android:layout_height="721dp"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/textview"
         android:layout_alignParentStart="true"
         android:layout_marginStart="0dp"
-        android:layout_marginTop="-42dp"
+        android:layout_marginTop="-28dp"
         android:contentDescription="@string/eva_risto"
         android:src="@mipmap/logo" />
 
