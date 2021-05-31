@@ -32,7 +32,6 @@
         android:id="@+id/username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:focusable="true"
         android:textColorHighlight="#ff7eff15"
         android:textColorHint="#ffff25e6"
