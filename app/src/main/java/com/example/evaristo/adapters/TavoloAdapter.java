@@ -2,13 +2,13 @@ package com.example.evaristo.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
-import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import com.example.evaristo.R;
+import com.example.evaristo.models.Menu;
 
 import java.util.List;
 
@@ -20,6 +20,7 @@ public class TavoloAdapter extends ArrayAdapter<Menu> {
         super(context, R.layout.content_menu, values);
         this.context = context;
     }
+
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
@@ -37,9 +38,5 @@ public class TavoloAdapter extends ArrayAdapter<Menu> {
         description.setText(menu.getDescrizione());
 
         return rowView;
-
-
-
-        return null;
     }
 }

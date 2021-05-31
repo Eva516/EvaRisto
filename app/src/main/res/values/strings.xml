@@ -107,7 +107,7 @@
     <string name="hello_world">Hello Square World!</string>
     <string name="colorepage1">100</string>
     <string name="HeaderList">100</string>
-    <string name="Login">35dp</string>
+    <string name="Login">Login</string>
     <string name="tutorials_point">Tutorials point</string>
     <string name="password">Password</string>
     <string name="cancel">Cancel</string>

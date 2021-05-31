@@ -1,4 +1,5 @@
 package com.example.evaristo.adapters;
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,14 +14,14 @@ import java.util.List;
 
 public class ClienteAdapter extends ArrayAdapter<Menu> {
 
-private final Context context;
+    private final Context context;
 
-public ClienteAdapter(Context context,List<Menu> values){
-        super(context,R.layout.content_menu,values);
+    public ClienteAdapter(Context context, List<Menu> values) {
+        super(context, R.layout.content_menu, values);
 
-        this.context=context;
+        this.context = context;
 
-        }
+    }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -39,9 +40,5 @@ public ClienteAdapter(Context context,List<Menu> values){
         description.setText(menu.getDescrizione());
 
         return rowView;
-
-
-
-        return null;
     }
-        }
+}
