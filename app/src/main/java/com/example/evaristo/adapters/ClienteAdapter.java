@@ -1,8 +1,10 @@
 package com.example.evaristo.adapters;
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.TextView;
 
 import com.example.evaristo.R;
 import com.example.evaristo.models.Menu;
@@ -22,7 +24,7 @@ public ClienteAdapter(Context context,List<Menu> values){
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        /*
+
         LayoutInflater inflater = (LayoutInflater) context
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
@@ -38,7 +40,7 @@ public ClienteAdapter(Context context,List<Menu> values){
 
         return rowView;
 
-         */
+
 
         return null;
     }

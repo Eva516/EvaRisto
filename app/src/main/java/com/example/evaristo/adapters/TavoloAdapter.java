@@ -1,16 +1,19 @@
 package com.example.evaristo.adapters;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.TextView;
 
 import com.example.evaristo.R;
 
 import java.util.List;
 
 public class TavoloAdapter extends ArrayAdapter<Menu> {
+
     private final Context context;
 
     public TavoloAdapter(Context context, List<Menu> values) {
@@ -19,7 +22,7 @@ public class TavoloAdapter extends ArrayAdapter<Menu> {
     }
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        /*
+
         LayoutInflater inflater = (LayoutInflater) context
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
@@ -35,7 +38,7 @@ public class TavoloAdapter extends ArrayAdapter<Menu> {
 
         return rowView;
 
-         */
+
 
         return null;
     }
