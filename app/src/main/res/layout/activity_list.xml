@@ -17,43 +17,50 @@
     android:textColor="@android:color/black"/>
 
 
-    <ListView
-        android:id="@+id/cliente"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textList1"
-        android:layout_marginTop="-300dp" >
+ <ListView
+     android:id="@+id/cliente"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/textList1"
+     android:layout_marginTop="-300dp"
+     android:orientation="vertical"/>
 
-    <ListView
-        android:id="@+id/piatto"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="-250dp" />
+ <ListView
+     android:id="@+id/piatto"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="-250dp"
+     android:orientation="vertical"/>
 
-    <ListView
-        android:id="@+id/Menu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="-200dp" />
+ <ListView
+     android:id="@+id/Menu"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="-200dp"
+     android:orientation="vertical"/>
 
-    <ListView
-        android:id="@+id/ordine"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="-150dp" />
+ <ListView
+     android:id="@+id/ordine"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="-150dp"
+     android:orientation="vertical" />
 
-    <ListView
-        android:id="@+id/ristorante"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="-100dp" />
+ <ListView
+     android:id="@+id/ristorante"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="-100dp"
+     android:orientation="vertical"/>
 
-    <ListView
-        android:id="@+id/tavolo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="-50dp" />
-    </ListView>
+ <ListView
+     android:id="@+id/tavolo"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="-50dp"
+     android:orientation="vertical" />
+
+   </ListView>
 
 </RelativeLayout>
 

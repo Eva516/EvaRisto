@@ -24,7 +24,7 @@ import java.util.ArrayList;
 public class MenuActivity extends AppCompatActivity {
 
     private MenuRepository menuRepository;
-    private listView listView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +40,7 @@ public class MenuActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        listView = (lisView)findViewById(R.id.list);
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -55,19 +55,19 @@ public class MenuActivity extends AppCompatActivity {
         listView.setNestedScrollingEnabled(true);
 
 
-        /*
+
         @SuppressLint("RestrictedApi")
         MenuAdapter menuAdapter = new MenuAdapter(this, new ArrayList<Menu>());
         listView.setAdapter(menuAdapter);
 
         try {
             Menu[] menus = menuRepository.loadMenu();
-            //menuAdapter.addAll(menus);
+            menuAdapter.addAll(menus);
             menuAdapter.notifyDataSetInvalidated();
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-         */
+
     }
 }
