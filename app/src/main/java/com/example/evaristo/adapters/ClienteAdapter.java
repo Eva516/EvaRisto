@@ -16,6 +16,7 @@ public class ClienteAdapter extends ArrayAdapter<Menu> {
 
     private final Context context;
 
+
     public ClienteAdapter(Context context, List<Menu> values) {
         super(context, R.layout.content_menu, values);
 
