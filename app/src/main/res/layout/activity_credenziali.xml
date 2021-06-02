@@ -26,23 +26,6 @@
         android:textColor = "#ff7aff24"
         android:textSize = "35sp" />
 
-    <EditText
-        android:id="@+id/username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="1200dp"
-        android:layout_marginStart="10dp"
-        android:autofillHints="Username"
-        android:focusable="true"
-        android:inputType="text"
-        android:text="@string/username"
-        android:hint="@string/username"
-        android:textColorHighlight="#ff7eff15"
-        android:textColorHint="#ffff25e6"
-        android:onClick="sendMessage"/>
-
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -54,28 +37,46 @@
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="307dp"
+        android:layout_height="70dp"
         android:layout_alignEnd="@id/textView"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="55dp"
-        android:layout_marginEnd="-20dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="77dp"
         android:autofillHints="Password"
         android:ems="10"
         android:focusable="true"
         android:hint="@string/password"
         android:inputType="textPassword"
         android:onClick="sendMessage"
-        android:textColorHint="#ffff299f" />
+        android:textColorHint="black" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="307dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="77dp"
+        android:autofillHints="Username"
+        android:focusable="true"
+        android:hint="@string/username"
+        android:inputType="text"
+        android:onClick="sendMessage"
+        android:text="@string/username"
+        android:textColorHighlight="#ff7eff15"
+        android:textColorHint="black" />
 
     <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView2"
-        android:src="@drawable/abc"
         android:layout_below="@+id/textview"
         android:layout_centerHorizontal="true"
-        android:contentDescription="@string/eva_risto" />
+        android:contentDescription="@string/eva_risto"
+        android:src="@drawable/abc" />
 
 
 </RelativeLayout>
