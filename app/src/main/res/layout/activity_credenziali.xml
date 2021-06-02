@@ -37,7 +37,8 @@
         android:autofillHints="Username"
         android:focusable="true"
         android:inputType="text"
-        android:hint="@string/eva_risto"
+        android:text="@string/username"
+        android:hint="@string/username"
         android:textColorHighlight="#ff7eff15"
         android:textColorHint="#ffff25e6"
         android:onClick="sendMessage"/>
@@ -51,68 +52,30 @@
         android:layout_centerHorizontal="true"
         android:contentDescription="@string/eva_risto" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="376dp"
-        android:layout_height="701dp"
-        android:layout_below="@+id/textview"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="-25dp"
-        android:contentDescription="@string/eva_risto"
-        android:src="@mipmap/logo" />
-
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:focusable="true"
-        android:inputType="textPassword"
-        android:ems="10"
         android:id="@+id/password"
-        android:layout_below="@+id/imageView2"
-        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignEnd="@id/textView"
-        android:textColorHint="#ffff299f"
-        android:hint="@string/password"
-        android:autofillHints="Password"
-        android:onClick="sendMessage"
-         />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/attempts_left"
-        android:id="@+id/textView2"
-        android:layout_below="@+id/imageView2"
         android:layout_alignParentStart="true"
-        android:textSize="25sp" />
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="-20dp"
+        android:autofillHints="Password"
+        android:ems="10"
+        android:focusable="true"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:onClick="sendMessage"
+        android:textColorHint="#ffff299f" />
 
-    <TextView
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/textView3"
-        android:layout_alignTop="@id/textView2"
-        android:layout_alignParentEnd="true"
-        android:layout_alignBottom="@+id/textView2"
-        android:layout_toEndOf="@+id/textView"
-        android:textSize="25sp" />
+        android:id="@+id/imageView2"
+        android:src="@drawable/abc"
+        android:layout_below="@+id/textview"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/eva_risto" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/login"
-        android:id="@id/button"
-        android:layout_alignParentBottom="true"
-        android:layout_toStartOf="@+id/textView"
-        tools:ignore="RelativeOverlap" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/cancel"
-        android:id="@+id/button2"
-        android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@+id/textView"/>
 
 </RelativeLayout>
