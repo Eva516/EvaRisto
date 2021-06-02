@@ -15,8 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-         />
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width = "wrap_content"
@@ -37,8 +36,10 @@
         android:autofillHints="Username"
         android:focusable="true"
         android:inputType="text"
+        android:hint="@string/eva_risto"
         android:textColorHighlight="#ff7eff15"
-        android:textColorHint="#ffff25e6" />
+        android:textColorHint="#ffff25e6"
+        android:onClick="sendMessage"/>
 
     <ImageView
         android:layout_width="wrap_content"
@@ -73,6 +74,7 @@
         android:textColorHint="#ffff299f"
         android:hint="@string/password"
         android:autofillHints="Password"
+        android:onClick="sendMessage"
          />
 
     <TextView
