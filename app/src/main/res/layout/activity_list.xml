@@ -1,6 +1,4 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    tools:context=""
-    tools:showIn="@activities/MenuActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@string/colorepage1">
@@ -22,7 +20,7 @@
      android:layout_width="match_parent"
      android:layout_height="wrap_content"
      android:layout_marginTop="-250dp"
-     android:orientation="vertical">
+     android:orientation="vertical"/>
 
  <ListView
       android:id="@+id/cliente"
