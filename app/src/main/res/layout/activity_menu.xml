@@ -23,7 +23,17 @@
 
 <TextView
 android:id="@id/primo"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignTop="@+id/thumbnail"
+android:layout_toRightOf="@+id/thumbnail"
+android:text="Primo"
+android:description ="pasta al pomodoro"
+android:text = "28€"
+android:textColor="#040404"
+android:typeface="sans"
+android:textSize="17dip"
+android:textStyle="bold"/>
 
-/>
 
 </RelativeLayout>
