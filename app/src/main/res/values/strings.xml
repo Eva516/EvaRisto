@@ -121,4 +121,7 @@
     <string name="ordine">Ordine</string>
     <string name="piatto">Piatto</string>
     <string name="cliente">Cliente</string>
+    <string name="primi_piatti">Primi piatti</string>
+    <string name="image">image</string>
+    <string name="secondi_piatti">secondi_piatti</string>
 </resources>

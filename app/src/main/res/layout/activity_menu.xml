@@ -4,36 +4,68 @@
     android:layout_height="wrap_content"
     android:background="@drawable/list_selector"
     android:orientation="horizontal"
-    android:padding="5dip" />
+    android:padding="5dip" >
 
-<LinearLayout android:id="@+id/thumbnail"
- android:layout_width="wrap_content"
- android:layout_height="wrap_content"
- android:padding="3dip"
- android:layout_alignParentLeft="true"
- android:layout_marginRight="5dip">
+    <!--  immagine sinistra -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="5dip">
 
-<ImageView
-    android:id="@+id/primo_piatto"
-    android:layout_width="45dip"
-    android:layout_height="45dip"
-    android:contentDescription="image"
-    android:src="@drawable/icon"/>
-</LinearLayout>
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:contentDescription="@string/image"
+            android:src="@drawable/login_button"/>
 
-<TextView
-android:id="@id/primo"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:layout_alignTop="@+id/thumbnail"
-android:layout_toRightOf="@+id/thumbnail"
-android:text="Primo"
-android:description ="pasta al pomodoro"
-android:text = "28€"
-android:textColor="#040404"
-android:typeface="sans"
-android:textSize="17dip"
-android:textStyle="bold"/>
+    </LinearLayout>
 
+    <TextView
+        android:id="@+id/primi_piatti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toEndOf="@+id/thumbnail"
+        android:text="@string/primi_piatti"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/image"
+        android:layout_width="53dp"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="5dip"
+        android:orientation="horizontal"
+        android:padding="3dip" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:contentDescription="@string/image"
+        android:src="@drawable/login_button"/>
+
+    <TextView
+        android:id="@+id/secondi_piatti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="58dp"
+        android:layout_toEndOf="@+id/thumbnail"
+        android:text="@string/secondi_piatti"
+        android:textColor="#040404"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
 
 </RelativeLayout>
+
+

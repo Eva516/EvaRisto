@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import com.example.evaristo.R;
+import com.example.evaristo.dto.PiattoDto;
 import com.example.evaristo.repositories.MenuRepository;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
@@ -20,6 +21,8 @@ import android.widget.ListView;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -68,6 +71,17 @@ public class MenuActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
+        setContentView(R.layout.activity_main);
+
+        ListView listView = (ListView)findViewById(R.id.);
+
+        List<PiattoDto> list = new LinkedList<PiattoDto>();
+        list.add(new PiattoDto ("Police","Don't stand so close to me"));
+        list.add(new PiattoDto ("Rihanna","Love the way you lie"));
+        list.add(new PiattoDto ("Marco Mengoni","L'essenziale"));
+
+        com.example.evaristo.adapters.MenuAdapter.CustomAdapter adapter = new CustomAdapter(this, R.layout.activity_menu, list);
+        listView.setAdapter(adapter);
 
     }
 }

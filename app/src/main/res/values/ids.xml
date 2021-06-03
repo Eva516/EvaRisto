@@ -6,4 +6,14 @@
     <item name="button" type="id" />
     <item name="menu_title" type="id"/>
     <item name="menu_description" type="id"/>
+    <item name="toolbar" type="id" />
+    <item name="fab" type="id" />
+    <item name="nome" type="id" />
+    <item name="id" type="id" />
+    <item name="prezzo" type="id" />
+    <item name="stato" type="id" />
+    <item name="tipo" type="id" />
+    <item name="vegetariano" type="id" />
+    <item name="vegano" type="id" />
+    <item name="allergeni" type="id" />
 </resources>
