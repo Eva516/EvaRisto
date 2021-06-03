@@ -69,22 +69,26 @@
         android:textSize="25sp" />
 
     <Button
+        android:id="@id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/login"
-        android:id="@id/button"
         android:layout_alignParentBottom="true"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="39dp"
         android:layout_toStartOf="@+id/textView"
         android:background="@drawable/login_button"
+        android:text="@string/login"
         tools:ignore="RelativeOverlap" />
 
     <Button
+        android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/cancel"
-        android:id="@+id/button2"
         android:layout_alignParentBottom="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginBottom="40dp"
+        android:layout_toEndOf="@+id/textView"
         android:background="@drawable/login_button"
-        android:layout_toEndOf="@+id/textView"/>
+        android:text="@string/cancel" />
 
 </RelativeLayout>

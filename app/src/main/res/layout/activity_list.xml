@@ -18,19 +18,25 @@
 
 
  <ListView
-     android:id="@+id/cliente"
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content"
-     android:layout_below="@+id/textList1"
-     android:layout_marginTop="-300dp"
-     android:orientation="vertical"/>
-
- <ListView
      android:id="@+id/piatto"
      android:layout_width="match_parent"
      android:layout_height="wrap_content"
      android:layout_marginTop="-250dp"
-     android:orientation="vertical"/>
+     android:orientation="vertical">
+
+ <ListView
+      android:id="@+id/cliente"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="-300dp"
+      android:orientation="vertical" >
+
+ <ListView
+       android:id="@+id/tavolo"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="-50dp"
+       android:orientation="vertical" />
 
  <ListView
      android:id="@+id/Menu"
@@ -53,14 +59,7 @@
      android:layout_marginTop="-100dp"
      android:orientation="vertical"/>
 
- <ListView
-     android:id="@+id/tavolo"
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content"
-     android:layout_marginTop="-50dp"
-     android:orientation="vertical" />
-
-   </ListView>
+</ListView>
 
 </RelativeLayout>
 
