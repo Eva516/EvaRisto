@@ -1,7 +1,6 @@
 package com.example.evaristo.repositories;
 
-import android.view.Menu;
-
+import com.example.evaristo.models.Menu;
 import com.google.gson.Gson;
 
 import org.json.JSONException;
