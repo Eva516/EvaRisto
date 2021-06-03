@@ -75,6 +75,7 @@
         android:id="@id/button"
         android:layout_alignParentBottom="true"
         android:layout_toStartOf="@+id/textView"
+        android:background="@drawable/login_button"
         tools:ignore="RelativeOverlap" />
 
     <Button
@@ -83,6 +84,7 @@
         android:text="@string/cancel"
         android:id="@+id/button2"
         android:layout_alignParentBottom="true"
+        android:background="@drawable/login_button"
         android:layout_toEndOf="@+id/textView"/>
 
 </RelativeLayout>
