@@ -42,7 +42,7 @@ public class MenuAdapter extends ArrayAdapter<Menu> {
         return rowView;
     }
 
-    public class CustomAdapter extends ArrayAdapter<PiattoDto>{
+    public static class CustomAdapter extends ArrayAdapter<PiattoDto>{
 
         public CustomAdapter(Context context, int textViewResourceId,
                              List <PiattoDto> objects) {

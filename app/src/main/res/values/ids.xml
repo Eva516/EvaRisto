@@ -16,4 +16,5 @@
     <item name="vegetariano" type="id" />
     <item name="vegano" type="id" />
     <item name="allergeni" type="id" />
+    <item name="activity_menu" type="id" />
 </resources>

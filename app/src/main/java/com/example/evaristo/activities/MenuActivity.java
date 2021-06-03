@@ -73,14 +73,14 @@ public class MenuActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
-        ListView listView = (ListView)findViewById(R.id.);
+        ListView listView = (ListView)findViewById(R.id.activity_menu);
 
         List<PiattoDto> list = new LinkedList<PiattoDto>();
         list.add(new PiattoDto ("Police","Don't stand so close to me"));
         list.add(new PiattoDto ("Rihanna","Love the way you lie"));
         list.add(new PiattoDto ("Marco Mengoni","L'essenziale"));
 
-        com.example.evaristo.adapters.MenuAdapter.CustomAdapter adapter = new CustomAdapter(this, R.layout.activity_menu, list);
+        com.example.evaristo.adapters.MenuAdapter.CustomAdapter adapter = new com.example.evaristo.adapters.MenuAdapter.CustomAdapter(this, R.layout.activity_menu, list);
         listView.setAdapter(adapter);
 
     }
