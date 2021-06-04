@@ -100,7 +100,7 @@ public class MenuActivity extends AppCompatActivity {
         this.id = Id;
         this.nome = Nome;
         this.descrizione = Descrizione;
-        this.prezzo = prezzo;
+        this.prezzo = Prezzo;
         this.stato = Stato;
         this.tipo = Tipo;
         this.vegetariano = Vegetariano;
