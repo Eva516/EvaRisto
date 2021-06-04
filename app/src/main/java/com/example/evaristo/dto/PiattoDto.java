@@ -11,7 +11,9 @@ public class PiattoDto {
     public String mVegano;
     public String mAllergeni;
 
-    public String getmId(){ return mId; }
+    public String getmId() {
+        return mId;
+    }
 
     public void setmId(String mId) {
         this.mId = mId;
@@ -79,6 +81,22 @@ public class PiattoDto {
 
     public void setmAllergeni(String mAllergeni) {
         this.mAllergeni = mAllergeni;
+    }
+
+
+    public PiattoDto(String Id, String Nome, String Descrizione, int Prezzo, String Stato, String Tipo, String Vegetariano, String Vegano, String Allergeni) {
+
+        this.mId = Id;
+        this.mNome = Nome;
+        this.mDescrizione = Descrizione;
+        this.mPrezzo = Prezzo;
+        this.mStato = Stato;
+        this.mTipo = Tipo;
+        this.mVegetariano = Vegetariano;
+        this.mVegano = Vegano;
+        this.mAllergeni = Allergeni;
+
+
     }
 }
 

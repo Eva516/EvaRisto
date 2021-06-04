@@ -95,19 +95,5 @@ public class MenuActivity extends AppCompatActivity {
 
     }
 
-    public MenuActivity(String Id, String Nome,String Descrizione, int Prezzo, String Stato, String Tipo, String Vegetariano, String Vegano, String Allergeni) {
 
-        this.id = Id;
-        this.nome = Nome;
-        this.descrizione = Descrizione;
-        this.prezzo = Prezzo;
-        this.stato = Stato;
-        this.tipo = Tipo;
-        this.vegetariano = Vegetariano;
-        this.vegano = Vegano;
-        this.allergeni = Allergeni;
-
-
-
-    }
 }
