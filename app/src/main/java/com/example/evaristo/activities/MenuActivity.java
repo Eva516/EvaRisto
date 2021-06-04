@@ -25,6 +25,17 @@ import java.util.List;
 
 public class MenuActivity extends AppCompatActivity {
 
+    public String id;
+    public String nome;
+    public String descrizione;
+    public int prezzo;
+    public String stato;
+    public String tipo;
+    public String vegetariano;
+    public String vegano;
+    public String allergeni;
+
+
     private MenuRepository menuRepository;
 
 
@@ -81,6 +92,31 @@ public class MenuActivity extends AppCompatActivity {
 
         com.example.evaristo.adapters.MenuAdapter.CustomAdapter adapter = new com.example.evaristo.adapters.MenuAdapter.CustomAdapter(this, R.layout.activity_menu, list);
         listViewMenu.setAdapter(adapter);
+
+    }
+
+    public MenuActivity(String Id, String Nome,String Descrizione, int Prezzo, String Stato, String Tipo, String Vegetariano, String Vegano, String Allergeni) {
+
+        this.id = Id;
+        this.nome = Nome;
+        this.descrizione = Descrizione;
+        this.prezzo = prezzo;
+        this.stato = Stato;
+        this.tipo = Tipo;
+        this.vegetariano = Vegetariano;
+        this.vegano = Vegano;
+        this.allergeni = Allergeni;
+
+
+        /*public String mId;
+        public String mNome;
+        public String mDescrizione;
+        public int mPrezzo;
+        public String mStato;
+        public String mTipo;
+        public String mVegetariano;
+        public String mVegano;
+        public String mAllergeni; */
 
     }
 }
