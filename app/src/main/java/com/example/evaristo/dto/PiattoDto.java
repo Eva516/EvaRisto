@@ -11,9 +11,7 @@ public class PiattoDto {
     public String mVegano;
     public String mAllergeni;
 
-    public String getmId(){
-        return mId;
-    }
+    public String getmId(){ return mId; }
 
     public void setmId(String mId) {
         this.mId = mId;
