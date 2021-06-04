@@ -5,6 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
+import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 
 import com.example.evaristo.R;
@@ -43,6 +45,10 @@ public class MenuAdapter extends ArrayAdapter<Menu> {
     }
 
     public static class CustomAdapter extends ArrayAdapter<PiattoDto>{
+        String PiattoDto[];
+        int flags;
+        LayoutInflater inflater;
+
 
         public CustomAdapter(Context context, int textViewResourceId,
                              List <PiattoDto> objects) {
@@ -77,6 +83,17 @@ public class MenuAdapter extends ArrayAdapter<Menu> {
             return convertView;
         }
 
+
+        @Override
+        public View getView(int i, View view, ViewGroup viewGroup) {
+            view = inflater.inflate(R.layout.activity_menu, null);
+            TextView menu = (TextView)
+                    view.findViewById(R.id.textView);
+            ImageView icon = (ImageView) view.findViewById(R.id.icon);
+            menu.setText([i]);
+            icon.setImageResource(flags[i]);
+            return view;
+        }
 }
 }
 
