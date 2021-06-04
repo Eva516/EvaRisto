@@ -4,7 +4,7 @@ public class PiattoDto {
     public String mId;
     public String mNome;
     public String mDescrizione;
-    public float mPrezzo;
+    public String mPrezzo;
     public String mStato;
     public String mTipo;
     public String mVegetariano;
@@ -35,7 +35,7 @@ public class PiattoDto {
         this.mDescrizione = mDescrizione;
     }
 
-    public CharSequence getmPrezzo() {
+    public float getmPrezzo() {
         return mPrezzo;
     }
 
