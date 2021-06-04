@@ -86,9 +86,33 @@ public class MenuActivity extends AppCompatActivity {
         ListView listViewMenu = findViewById(R.id.activity_menu);
 
         List<PiattoDto> list = new LinkedList<PiattoDto>();
-        list.add(new PiattoDto ());
-        list.add(new PiattoDto ());
-        list.add(new PiattoDto ());
+        list.add(new PiattoDto ("A0123B50", "Riso e verza", "Riso con verdura", "10.0", "Attivo ", "primo", "si", "si", "no"));
+        list.add(new PiattoDto ("A0123B51", "Fettuccine con la mollica", "Pasta in bianco con mollica di pane arrostita", "10.0", "Attivo ", "primo", "si", "no", "no"));
+        list.add(new PiattoDto ("A0123B52", "Cavatelli al sugo di maiale", "Pasta con sugo di maiale", "10.0", "Attivo ", "primo", "no", "no", "no"));
+        list.add(new PiattoDto ("A0123B53", "Tagliolini di Campobasso", "Sugo al pomodoro", "10.0", "Attivo ", "primo", "si", "no", "no"));
+        list.add(new PiattoDto ("A0123B54", "Crioli con le noci", "Pasta con le noci", "10.0", "Attivo ", "primo", "si", "no", "no"));
+        list.add(new PiattoDto ("A0123B55", "Spaghetti con le alici", "Pasta con pesce", "10.0", "Attivo ", "primo", "no", "si", "no"));
+        list.add(new PiattoDto ("A0123B56", "Taccozze e fagioli", "Pasta all'uovo con fagioli", "10.0", "Attivo ", "primo", "si", "no", "no"));
+        list.add(new PiattoDto ("A0123B57", "Segntell", "Pasta all'uovo", "10.0", "Attivo ", "primo", "si", "no", "no"));
+        list.add(new PiattoDto ("A0123B58", "Fusilli al pomodoro", "Pasta all'uovo", "10.0", "Attivo ", "primo", "si", "no", "no"));
+        list.add(new PiattoDto ("A0123B59", "Ciabotta", "zuppa di peperoni, uova, melanzane, zucchine", "10.0", "Attivo ", "primo", "si", "no", "no"));
+        list.add(new PiattoDto ("A0123B60", "Triglie alla 'ngorda", "Triglie con mollica di pane", "20.0", "Attivo ", "secondo", "no", "si", "no"));
+        list.add(new PiattoDto ("A0123B61", "Affunniatelle", "Peperoni e uova fritti", "10.0", "Attivo ", "secondo", "si", "no", "no"));
+        list.add(new PiattoDto ("A0123B62", "Polpette di casce e ov", "Polpette con formaggio e uovo", "10.0", "Attivo ", "secondo", "si", "no", "no"));
+        list.add(new PiattoDto ("A0123B63", "Baccalà arrecanato", "Baccalà al sugo", "10.0", "Attivo ", "secondo", "no", "no", "no"));
+        list.add(new PiattoDto ("A0123B64", "Coda di rospo al limone", "Pescein guazzetto", "10.0", "Attivo ", "secondo", "no", "no", "no"));
+        list.add(new PiattoDto ("A0123B65", "Coscia di agnello ripiena", "Carne di agnello ripiena con lardo di maiale", "10.0", "Attivo ", "secondo", "no", "no", "no"));
+        list.add(new PiattoDto ("A0123B66", "coda di rospo al pomodoro", "Pesce al pomodoro", "10.0", "Attivo ", "secondo", "no", "no", "no"));
+        list.add(new PiattoDto ("A0123B67", "Agnello e piselli", "Carne di agnello con piselli", "10.0", "Attivo ", "secondo", "no", "no", "no"));
+        list.add(new PiattoDto ("A0123B68", "Trippa al sugo", "Carne al sugo", "10.0", "Attivo ", "secondo", "no", "si", "no"));
+        list.add(new PiattoDto ("A0123B69", "Baccalà fritto", "Pesce con pastella", "10.0", "Attivo ", "secondo", "no", "no", "no"));
+        list.add(new PiattoDto ("A0123B70", "Capra alla molisana", "Carne", "10.0", "Attivo ", "secondo", "no", "no", "no"));
+        list.add(new PiattoDto ("A0123B66", "insalata verde", "Insalata di lattuga", "10.0", "Attivo ", "contorno", "si", "si", "no"));
+        list.add(new PiattoDto ("A0123B67", "Insalata mista", "Insalata", "10.0", "Attivo ", "contorno", "si", "si", "no"));
+        list.add(new PiattoDto ("A0123B68", "Insalata di tortoli", "Insalata", "10.0", "Attivo ", "contorno", "si", "si", "no"));
+        list.add(new PiattoDto ("A0123B69", "Insalata di cetrioli", "Insalata", "10.0", "Attivo ", "contorno", "si", "si", "no"));
+        list.add(new PiattoDto ("A0123B70", "Insalata di pomodorini gialli", "Insalata", "10.0", "Attivo ", "contorno", "si", "si", "no"));
+
 
         com.example.evaristo.adapters.MenuAdapter.CustomAdapter adapter = new com.example.evaristo.adapters.MenuAdapter.CustomAdapter(this, R.layout.activity_menu, list);
         listViewMenu.setAdapter(adapter);
@@ -97,3 +121,4 @@ public class MenuActivity extends AppCompatActivity {
 
 
 }
+

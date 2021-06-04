@@ -4,7 +4,7 @@ public class PiattoDto {
     public String mId;
     public String mNome;
     public String mDescrizione;
-    public int mPrezzo;
+    public float mPrezzo;
     public String mStato;
     public String mTipo;
     public String mVegetariano;
@@ -35,7 +35,7 @@ public class PiattoDto {
         this.mDescrizione = mDescrizione;
     }
 
-    public int getmPrezzo() {
+    public CharSequence getmPrezzo() {
         return mPrezzo;
     }
 
@@ -84,7 +84,7 @@ public class PiattoDto {
     }
 
 
-    public PiattoDto(String Id, String Nome, String Descrizione, int Prezzo, String Stato, String Tipo, String Vegetariano, String Vegano, String Allergeni) {
+    public PiattoDto(String Id, String Nome, String Descrizione, String Prezzo, String Stato, String Tipo, String Vegetariano, String Vegano, String Allergeni) {
 
         this.mId = Id;
         this.mNome = Nome;
@@ -95,8 +95,6 @@ public class PiattoDto {
         this.mVegetariano = Vegetariano;
         this.mVegano = Vegano;
         this.mAllergeni = Allergeni;
-
-
     }
 }
 
