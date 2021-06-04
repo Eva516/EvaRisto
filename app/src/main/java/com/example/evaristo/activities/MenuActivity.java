@@ -4,18 +4,17 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import com.example.evaristo.R;
+import com.example.evaristo.adapters.MenuAdapter;
 import com.example.evaristo.dto.PiattoDto;
+import com.example.evaristo.models.Menu;
 import com.example.evaristo.repositories.MenuRepository;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.view.menu.MenuAdapter;
 import androidx.appcompat.widget.Toolbar;
 
 import android.os.StrictMode;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.View;
 import android.widget.ListView;
 
@@ -73,7 +72,7 @@ public class MenuActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
-        ListView listView = (ListView)findViewById(R.id.activity_menu);
+        ListView listViewMenu = findViewById(R.id.activity_menu);
 
         List<PiattoDto> list = new LinkedList<PiattoDto>();
         list.add(new PiattoDto ());
@@ -81,7 +80,7 @@ public class MenuActivity extends AppCompatActivity {
         list.add(new PiattoDto ());
 
         com.example.evaristo.adapters.MenuAdapter.CustomAdapter adapter = new com.example.evaristo.adapters.MenuAdapter.CustomAdapter(this, R.layout.activity_menu, list);
-        listView.setAdapter(adapter);
+        listViewMenu.setAdapter(adapter);
 
     }
 }
