@@ -6,12 +6,12 @@ public class PiattoDto {
     public String mId;
     public String mNome;
     public String mDescrizione;
-    public String mPrezzo;
+    public float mPrezzo;
     public String mStato;
     public String mTipo;
-    public String mVegetariano;
-    public String mVegano;
-    public String mAllergeni;
+    public boolean mVegetariano;
+    public boolean mVegano;
+    public boolean mAllergeni;
 
 
     public String getmId() {
@@ -62,32 +62,32 @@ public class PiattoDto {
         this.mTipo = mTipo;
     }
 
-    public String getmVegetariano() {
+    public boolean getmVegetariano() {
         return mVegetariano;
     }
 
-    public void setmVegetariano(String mVegetariano) {
+    public void setmVegetariano(boolean mVegetariano) {
         this.mVegetariano = mVegetariano;
     }
 
-    public String getmVegano() {
+    public boolean getmVegano() {
         return mVegano;
     }
 
-    public void setmVegano(String mVegano) {
+    public void setmVegano(boolean mVegano) {
         this.mVegano = mVegano;
     }
 
-    public String getmAllergeni() {
+    public boolean getmAllergeni() {
         return mAllergeni;
     }
 
-    public void setmAllergeni(String mAllergeni) {
+    public void setmAllergeni(boolean mAllergeni) {
         this.mAllergeni = mAllergeni;
     }
 
 
-    public PiattoDto(String Id, String Nome, String Descrizione, String Prezzo, String Stato, String Tipo, String Vegetariano, String Vegano, String Allergeni) {
+    public PiattoDto(String Id, String Nome, String Descrizione, float Prezzo, String Stato, String Tipo, boolean Vegetariano, boolean Vegano, boolean Allergeni) {
 
         this.mId = Id;
         this.mNome = Nome;

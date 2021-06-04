@@ -44,14 +44,14 @@ public class MenuAdapter extends ArrayAdapter<Menu> {
         return rowView;
     }
 
-    public static class CustomAdapter extends ArrayAdapter<PiattoDto>{
+    public static class CustomAdapter extends ArrayAdapter<PiattoDto> {
         String PiattoDto[];
         int flags;
         LayoutInflater inflater;
 
 
         public CustomAdapter(Context context, int textViewResourceId,
-                             List <PiattoDto> objects) {
+                             List<PiattoDto> objects) {
             super(context, textViewResourceId, objects);
         }
 
@@ -60,40 +60,29 @@ public class MenuAdapter extends ArrayAdapter<Menu> {
             LayoutInflater inflater = (LayoutInflater) getContext()
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = inflater.inflate(R.layout.activity_menu, null);
-            TextView id = (TextView)convertView.findViewById(R.id.id);
-            TextView nome = (TextView)convertView.findViewById(R.id.nome);
-            TextView descrizione = (TextView)convertView.findViewById(R.id.menu_description);
-            TextView prezzo = (TextView)convertView.findViewById(R.id.prezzo);
-            TextView stato = (TextView)convertView.findViewById(R.id.stato);
-            TextView tipo = (TextView)convertView.findViewById(R.id.tipo);
-            TextView vegetariano = (TextView)convertView.findViewById(R.id.vegetariano);
-            TextView vegano = (TextView)convertView.findViewById(R.id.vegano);
-            TextView allergeni = (TextView)convertView.findViewById(R.id.allergeni);
+            TextView id = (TextView) convertView.findViewById(R.id.id);
+            TextView nome = (TextView) convertView.findViewById(R.id.nome);
+            TextView descrizione = (TextView) convertView.findViewById(R.id.menu_description);
+            TextView prezzo = (TextView) convertView.findViewById(R.id.prezzo);
+            TextView stato = (TextView) convertView.findViewById(R.id.stato);
+            TextView tipo = (TextView) convertView.findViewById(R.id.tipo);
+            TextView vegetariano = (TextView) convertView.findViewById(R.id.vegetariano);
+            TextView vegano = (TextView) convertView.findViewById(R.id.vegano);
+            TextView allergeni = (TextView) convertView.findViewById(R.id.allergeni);
             PiattoDto c = getItem(position);
 
             id.setText(c.getmId());
             nome.setText(c.getmNome());
             descrizione.setText(c.getmDescrizione());
-            prezzo.setText(c.getmPrezzo());
+            prezzo.setText(String.valueOf(c.getmPrezzo()));
             stato.setText(c.getmStato());
             tipo.setText(c.getmTipo());
-            vegetariano.setText(c.getmVegetariano());
-            vegano.setText(c.getmVegano());
-            allergeni.setText(c.getmAllergeni());
+            vegetariano.setText(String.valueOf(c.getmVegetariano()));
+            vegano.setText(String.valueOf(c.getmVegano()));
+            allergeni.setText(String.valueOf(c.getmAllergeni()));
+
             return convertView;
         }
-
-
-        @Override
-        public View getView(int i, View view, ViewGroup viewGroup) {
-            view = inflater.inflate(R.layout.activity_menu, null);
-            TextView menu = (TextView)
-                    view.findViewById(R.id.textView);
-            ImageView icon = (ImageView) view.findViewById(R.id.icon);
-            menu.setText([i]);
-            icon.setImageResource(flags[i]);
-            return view;
-        }
-}
+    }
 }
 
