@@ -1,5 +1,7 @@
 package com.example.evaristo.dto;
 
+import com.example.evaristo.adapters.MenuAdapter;
+
 public class PiattoDto {
     public String mId;
     public String mNome;
@@ -10,6 +12,7 @@ public class PiattoDto {
     public String mVegetariano;
     public String mVegano;
     public String mAllergeni;
+
 
     public String getmId() {
         return mId;

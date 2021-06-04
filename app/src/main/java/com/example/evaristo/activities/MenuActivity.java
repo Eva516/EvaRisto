@@ -119,6 +119,15 @@ public class MenuActivity extends AppCompatActivity {
 
     }
 
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_menu);
+    PiattoDto = (ListView) findViewById(R.id.menu);
+    MenuAdapter menuAdapter = new MenuAdapter(getApplicationContext(), PiattoDto, flags);
+    PiattoDto.setAdapter(menuAdapter);
+}
+}
 
 }
 
