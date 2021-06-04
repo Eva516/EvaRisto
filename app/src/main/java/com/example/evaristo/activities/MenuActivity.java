@@ -108,15 +108,6 @@ public class MenuActivity extends AppCompatActivity {
         this.allergeni = Allergeni;
 
 
-        /*public String mId;
-        public String mNome;
-        public String mDescrizione;
-        public int mPrezzo;
-        public String mStato;
-        public String mTipo;
-        public String mVegetariano;
-        public String mVegano;
-        public String mAllergeni; */
 
     }
 }
