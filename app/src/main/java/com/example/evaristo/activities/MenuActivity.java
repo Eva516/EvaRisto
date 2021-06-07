@@ -43,10 +43,6 @@ public class MenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         menuRepository = new MenuRepository();
 
-        StrictMode.ThreadPolicy policy =
-                new StrictMode.ThreadPolicy.Builder().permitAll().build();
-        StrictMode.setThreadPolicy(policy);
-
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_menu);
@@ -54,6 +50,7 @@ public class MenuActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
+        /*
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,15 +59,18 @@ public class MenuActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        */
 
+        /*
         ListView listView = findViewById(R.id.menu_list);
         listView.setNestedScrollingEnabled(true);
-
+        */
 
         @SuppressLint("RestrictedApi")
         MenuAdapter menuAdapter = new MenuAdapter(this, new ArrayList<Menu>());
-        listView.setAdapter(menuAdapter);
+        //listView.setAdapter(menuAdapter);
 
+        /*
         try {
             Menu[] menus = menuRepository.loadMenu();
             menuAdapter.addAll(menus);
@@ -78,10 +78,11 @@ public class MenuActivity extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        */
 
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_menu);
 
-        ListView listViewMenu = findViewById(R.id.activity_menu);
+        //ListView listViewMenu = findViewById(R.id.activity_menu);
 
         List<PiattoDto> list = new LinkedList<PiattoDto>();
         list.add(new PiattoDto("A0123B50", "Riso e verza", "Riso con verdura", 10.0f, "Attivo ", "primo", true, true, false));
@@ -113,7 +114,7 @@ public class MenuActivity extends AppCompatActivity {
 
 
         com.example.evaristo.adapters.MenuAdapter.CustomAdapter adapter = new com.example.evaristo.adapters.MenuAdapter.CustomAdapter(this, R.layout.activity_menu, list);
-        listViewMenu.setAdapter(adapter);
+        //listViewMenu.setAdapter(adapter);
 
     }
 }

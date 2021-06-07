@@ -28,6 +28,8 @@ public class MenuRepository {
     }
 
     public String login(String username, String password) throws IOException, JSONException {
+        return "token";
+        /*
         RequestBody body = RequestBody.create("{\"username\":\"" + username + "\",\"password\":\"" + password + "\"}", JSON);
         Request request = new Request.Builder()
                 .url(HOST + "/api/v1/login").post(body)
@@ -38,6 +40,8 @@ public class MenuRepository {
 
         JSONObject jsonObject = new JSONObject(json);
         return jsonObject.getString("token");
+
+         */
     }
 
     public Menu[] loadMenu() throws IOException {

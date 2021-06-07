@@ -33,23 +33,20 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        final TextView username = findViewById(R.id.username);
-        final TextView password = findViewById(R.id.password);
+        //final TextView username = findViewById(R.id.username);
+        //final TextView password = findViewById(R.id.password);
 
         Button loginButton = findViewById(R.id.button);
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                InputMethodManager imm = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
-                imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
-
                 MenuRepository menuRepository = new MenuRepository();
 
                 try {
-                    String token = menuRepository.login(username.getText().toString(), password.getText().toString());
-                    Log.d("EvaRisto", token);
+                    //String token = menuRepository.login(username.getText().toString(), password.getText().toString());
+                    //Log.d("EvaRisto", token);
 
-                    MenuRepository.TOKEN = token;
+                    MenuRepository.TOKEN = "token";
 
                     Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
                     startActivity(intent);
